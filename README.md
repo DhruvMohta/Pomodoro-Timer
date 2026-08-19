@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Neon Lofi Focus
 
-# Run and deploy your AI Studio app
+A Pomodoro-style study timer with a lofi music player and a retro neon interface, built with React, TypeScript, and Vite.
 
-This contains everything you need to run your app locally.
+Live app: https://dhruvmohta.github.io/Pomodoro-Timer/
 
-View your app in AI Studio: https://ai.studio/apps/drive/1yernsMdnZBxbwuM194ICd2ETHNIccuL8
+## Features
 
-## Run Locally
+- **Pomodoro timer** — configurable focus, short break, and long break durations, with automatic switching between them.
+- **Session tracking** — shows progress toward your next long break.
+- **Music player** — a built-in lofi playlist with play/pause, skip, and volume control. You can also upload your own audio files or an entire folder.
+- **Custom backgrounds** — upload a video to use as the background; the app pulls dominant colors from it and re-themes the UI accents to match.
+- **Retro UI** — scanline and CRT-style visual effects, VT323 monospace font.
 
-**Prerequisites:**  Node.js
+## Running locally
 
+**Prerequisites:** Node.js
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install
+npm run dev
+```
+
+## Building for production
+
+```bash
+npm run build
+```
+
+Outputs a static build to `dist/`. The project deploys automatically to GitHub Pages via the workflow in `.github/workflows/deploy.yml` on every push to `main`.
