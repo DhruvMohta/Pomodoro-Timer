@@ -221,7 +221,7 @@ export const MusicPlayer: React.FC<MusicPlayerProps> = ({ onClose, className = '
       
       {/* Mobile Close Button */}
       {onClose && (
-        <button onClick={onClose} className="absolute top-4 right-4 text-[var(--color-secondary)] hover:text-white lg:hidden z-20">
+        <button onClick={onClose} className="absolute top-4 right-4 text-[var(--color-secondary)] hover:text-white z-20">
           <X className="w-6 h-6" />
         </button>
       )}
